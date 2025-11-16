@@ -1,60 +1,99 @@
-body {
-  font-family: 'Poppins', sans-serif;
+* {
   margin: 0;
   padding: 0;
-  background: #ffffff;
-  color: #333;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f8f8;
+  color: #2f2f2f;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+header {
   text-align: center;
+  margin-bottom: 3rem;
 }
 
-.container {
-  padding: 80px 20px;
-  max-width: 700px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 2.5rem;
+header h1 {
   font-weight: 600;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #4a5d3b;
 }
 
-h2 {
-  font-size: 1.3rem;
+header .emoji {
+  font-size: 1.4rem;
+}
+
+.intro {
+  margin-top: 0.5rem;
   font-weight: 300;
-  margin-bottom: 30px;
+  color: #555;
 }
 
-.btn-whatsapp {
-  display: inline-block;
-  background: #25D366;
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 8px;
+.hero {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.hero h2 {
+  font-size: 1.6rem;
+  color: #4a5d3b;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.hero .sub {
+  color: #444;
+  font-weight: 300;
+}
+
+.hero a {
+  color: #4a5d3b;
   text-decoration: none;
-  font-weight: 500;
-  margin-bottom: 50px;
-  font-size: 1.1rem;
+  font-weight: 400;
 }
 
-.btn-box {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-top: 40px;
+.areas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.box-btn {
-  background: #ffffff;
-  padding: 20px;
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
   border-radius: 12px;
-  font-size: 1.1rem;
-  font-weight: 500;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   transition: transform 0.2s ease;
 }
 
-.box-btn:hover {
-  transform: translateY(-4px);
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #4a5d3b;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Ajuste para mobile */
+@media (max-width: 768px) {
+  .hero .sub {
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
